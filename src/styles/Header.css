@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.title {
+  color: white;
+  font-size: xx-large;
+}
+.signIn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
