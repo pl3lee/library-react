@@ -8,6 +8,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "../firebase";
+import Main from "./Main";
 function App() {
   async function signIn() {
     // TODO 1: Sign in Firebase with credential from the Google user.
@@ -51,7 +52,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header login={() => signIn()} />
+      <Header login={signIn} />
+      <Main></Main>
     </div>
   );
 }
